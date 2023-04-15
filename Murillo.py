@@ -1,0 +1,5 @@
+print("0,1:\n\n")
+nome = input("Qual o seu nome?\n")
+número = int(input("Me diga um número:\n"))
+print(nome,", o dobro de",número,"é igual a",número*2,"!")
+print("-------------------------------------------------------------------------------------\n0,2:\n\n")
