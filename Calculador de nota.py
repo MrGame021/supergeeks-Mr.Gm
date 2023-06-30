@@ -46,3 +46,4 @@ else:
         print("Você passou!")
     else:
         print("Se esforce no ano que vem!")
+input("-  Aperte qualquer tecla para sair do programa  -")
