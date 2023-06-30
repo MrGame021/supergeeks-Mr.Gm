@@ -11,18 +11,21 @@ nota1tri1 = float(input("A nota do trabalho: "))
 nota2tri1 = float(input("A nota do teste: "))
 nota3tri1 = float(input("A nota da prova: "))
 tri1 = (nota1tri1+nota2tri1+nota3tri1)/3
+print("Tri1:",tri1)
 
 print("\n- Segundo Trimestre: -\n\n")
 nota1tri2 = float(input("A nota do trabalho: "))
 nota2tri2 = float(input("A nota do teste: "))
 nota3tri2 = float(input("A nota da prova: "))
 tri2 = (nota1tri2+nota2tri2+nota3tri2)/3
+print("Tri2:",tri2)
 
 print("\n- Terceiro Trimestre: -\n\n")
 nota1tri3 = float(input("A nota do trabalho: "))
 nota2tri3 = float(input("A nota do teste: "))
 nota3tri3 = float(input("A nota da prova: "))
 tri3 = (nota1tri3+nota2tri3+nota3tri3)/3
+print("Tri3:",tri3)
 
 notaAno = (tri1+tri2+tri3)/3
 
