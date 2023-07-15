@@ -57,7 +57,7 @@ O que deseja fazer?
         
     elif(menu == 3):
         sair = input('Digite "sair" se tem certeza: ')
-        if(sair == 'sair' or sair == 'Sair'):
+        if(sair == 'sair' or sair == 'Sair' or sair == 'SAIR'):
             break
     else:
         print('Opção inválida.')
