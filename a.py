@@ -3,11 +3,12 @@ import os
 a = "=-"*10+"="
 print(f"{a}  Acerte a palavra  {a}")
 
-p4 = ['Urso']
-p7 = ['Celular', 'Abóbora', '', '', '']
-p8 = ['Capivara', '', '', '', '']
+p4 = ['Urso', '', '', '', '']
+p7 = ['Celular', 'Abóbora', 'Etienne', '', '']
+p8 = ['Capivara', 'Suricato', 'Panelada', 'Nintendo', 'Educação']
 p10 = ['Computador', 'Comparador', '', '', '']
 p11 = ['Playstation', '', '', '', '']
+
 
 
 b = int(input("""
@@ -35,3 +36,4 @@ if(b == 1):
     text += '_ '
 print(p)
 print(text)
+
