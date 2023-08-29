@@ -3,17 +3,17 @@ import os
 a = "=-"*10+"="
 print(f"{a}  Acerte a palavra  {a}")
 
-p4 = ['Urso', '', '', '', '']
-p7 = ['Celular', 'Abóbora', 'Etienne', '', '']
+p4 = ['Urso', 'Caos', 'Vida', 'Auto', 'Doce']
+p7 = ['Celular', 'Abóbora', 'Etienne', 'Empatia', 'Família']
 p8 = ['Capivara', 'Suricato', 'Panelada', 'Nintendo', 'Educação']
-p10 = ['Computador', 'Comparador', '', '', '']
-p11 = ['Playstation', '', '', '', '']
+p10 = ['Computador', 'Comparador', 'Dicionário', 'Maturidade', 'Referência']
+p11 = ['Playstation', 'Perspectiva', 'Dissimulado', 'Compreensão', 'Preconceito']
 
 
 
 b = int(input("""
  ----------------------------------------------
-|    Digite um número de 1 a 7:                |
+|    Digite um número de 1 a 5:                |
 |                                              |
 |                                              |
 |    1) _ _ _ _                                |
