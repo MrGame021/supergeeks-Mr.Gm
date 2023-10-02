@@ -29,30 +29,32 @@ os.system('cls')
 p4 = ['Urso', 'Caos', 'Copo', 'Alto', 'Doce']
 d4 = ['Animal', 'Situação', 'Cosinha', 'Altura', 'Gosto/Sentimento']
 x4 = random.randint(0, len(p4)-1)
+palaEsc4 = p4[x4]
+dicaEsc4 = d4[x4]
 
 p7 = ['Celular', 'Abóbora', 'Etienne', 'Empatia', 'Família']
 d7 = ['Eletrônico', 'Comida', 'Nome', 'Sentimento', 'Pais']
 x7 = random.randint(0, len(p7)-1)
+palaEsc7 = p7[x7]
+dicaEsc7 = d7[x7]
 
 p8 = ['Capivara', 'Suricato', '', 'Nintendo', 'Educação']#
 d8 = ['Animal', 'Animal','','Desenvolvedora de Jogos','Estudo']
 x8 = random.randint(0, len(p8)-1)
+palaEsc8 = p8[x8]
+dicaEsc8 = d8[x8]
 
 p10 = ['Computador', 'Fleumático', 'Dicionário', 'Maturidade', 'Pragmático']
 d10 = ['Eletrônico','Muito Paciente','Palavras','Crescimento','Ordem Prática']
 x10 = random.randint(0, len(p10)-1)
+palaEsc10 = p10[x10]
+dicaEsc10 = d10[x10]
 
 p11 = ['Playstation', 'Perspectiva', '', 'Compreensão', 'Preconceito']
 d11 = ['Desenvolvedora de Jogos','Ponto de Vista','','Entendimento','']#
 x11 = random.randint(0, len(p11)-1)
-
-
-
-
-
-
-
-
+palaEsc11 = d11[x11]
+dicaEsc11 = d11[x11]
 
 
 c = input('''
@@ -100,15 +102,30 @@ if(c == 'A' or c == 'a'):
     text = ''
 
         
-    if(b == 1):
+    if(b == '1' or b == '1'):
+        print(palaEsc4)
+        print(dicaEsc4)
         print(x4)
-            
-              
-        
+    elif(b == '2' or b == '2'):
+        print(palaEsc7)
+        print(dicaEsc7)
+        print(x7)
+    elif(b == '3' or b == '3'):
+        print(palaEsc8)
+        print(dicaEsc8)
+        print(x8)
+    elif(b == '4' or b == '4'):
+        print(palaEsc10)
+        print(dicaEsc10)
+        print(x10)
+    elif(b == '5' or b == '5'):
+        print(palaEsc11)
+        print(dicaEsc11)
+        print(x11)
     else:
         print("Essa opção não existe ou ainda não foi incrementada!")
         input()
         
     os.system('cls')
-print("oi")
-input()
+    print("oi")
+    input()
