@@ -76,27 +76,27 @@ while True:
  ----------------------------------------------
 '''))
     os.system('cls')
-    if (d == 1):
-        c = input('''
+    if (d == 1):#dificuldade
+        dif = int(input('''
  ----------------------------------------------
 |        Escolha a dificuldade do jogo:        |
 |                                              |
 |                                              |
-|    A - Normal                                |
+|    [1] - Normal                              |
 |                                              |
 |                                              |
-|    B - Difícil                               |
+|    [2] - Difícil                             |
 |                                              |
 |                                              |
-|    C - Muito Difícil                         |
+|    [3] - Muito Difícil                       |
 |                                              |
 |                                              |
 |                                              |          
 |                                              |
  ----------------------------------------------
 
-''')
-        os.system('cls')
+'''))
+        os.system('cls')     #palavras
         b = int(input('''
  ----------------------------------------------
 |          Digite um número de 1 a 5:          |
@@ -111,54 +111,66 @@ while True:
 |    4) _ _ _ _ _ _ _ _ _                      |
 |                                              |
 |    5) _ _ _ _ _ _ _ _ _ _ _                  |
-|                                              |          
+|                                              |
 |                                              |
  ----------------------------------------------
 '''))
         os.system('cls')
-        if(c == 'A' or c == 'a'):
-            if(b == 1):
-                print(palaEsc4)
-                print(dicaEsc4)
-                print(x4)
-            elif(b == 2):
-                print(palaEsc7)
-                print(dicaEsc7)
-                print(x7)
-            elif(b == 3):
-                print(palaEsc8)
-                print(dicaEsc8)
-                print(x8)
-            elif(b == 4):
-                print(palaEsc10)
-                print(dicaEsc10)
-                print(x10)
-            elif(b == 5):
-                print(palaEsc11)
-                print(dicaEsc11)
-                print(x11)
-            else:
-                print("Essa opção não existe ou ainda não foi incrementada!")
-                input()
-                os.system('cls')
-                print("oi")
-                input()
+        if(dif == 1 or dif == 2):
+            vida = 5
+        elif(dif == 3):
+            vida = 3
+            dica = '▓▓▓▓▓▓▓'
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     elif(d == 2):
         print('''
  ----------------------------------------------
-|                 Sobre o jogo:                 |
-|                                               |
-|     O jogo da forca é um jogo em que o jogador tem que acertar qual é a palavra proposta, tendo como dica o número de letras e o tema ligado à palavra. A cada letra errada, é desenhado uma parte do corpo do enforcado.|
-|     |
-|     |
-|     |
-|     |
-|     |
-|     |
-|     |
-|     |
-|     |
-|     |          
-|     |
+|                 Sobre o jogo:                |
+|                                              |
+|       O jogo da forca é um jogo em que o     |
+|         jogador tem que acertar qual         |
+|    é a palavra proposta, tendo como dica     |
+|     o número de letras e o tema ligado       |
+|                 à palavra.                   |
+|     A cada letra errada, é desenhado uma     |
+|         parte do corpo do enforcado.         |
+|                                              |
+|                                              |
+|                  BOA SORTE!                  |
+|                                              |
+|                                              |
  ----------------------------------------------
  ''')
+        input()
+        os.system('cls')
+    elif(d == 3):
+        break
+        input("Aperte ENTER para sair do programa!")
+
+
+
+
+            #else:
+               # print("Essa opção não existe ou ainda não foi incrementada!")
+               # input()
+               # os.system('cls')
+
+
+
+
+
