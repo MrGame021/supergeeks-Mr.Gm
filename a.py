@@ -62,7 +62,7 @@ while True:
 |            Painel de Informações:            |
 |                                              |
 |                                              |
-|   [1] - Escolher Dificuldade                 |
+|   [1] - Jogo                                 |
 |                                              |
 |                                              |
 |   [2] - Sobre                                |
@@ -121,8 +121,10 @@ while True:
         elif(dif == 3):
             vida = 3
             dica = '▓▓▓▓▓▓▓'
-            
-
+        else:
+            input('Reinicie o jogo!')
+            break
+forca = []
 
 
 
