@@ -1,33 +1,8 @@
 import random, os
-
 # os.system('cls')
 
-
-a = "=-"*7+"="
-print(f'''
- -----------------------------------------------
-|                                               |
-|                                               |
-|  {a}    Forca    {a}  |
-|                                               |
-|                                               |
-|                                               |
-|                                               |
-|               por: Murillo Souza              |
-|                                               |
-|                                               |
-|                                               |
-|                                               |
-|                                               |          
-|                                               |
- -----------------------------------------------
-
-''')
-input()
-os.system('cls')
-
 p4 = ['Urso', 'Caos', 'Copo', 'Alto', 'Doce']
-d4 = ['Animal', 'Situação', 'Cosinha', 'Altura', 'Gosto/Sentimento']
+d4 = ['Animal', 'Situação', 'Cozinha', 'Altura', 'Gosto/Sentimento']
 x4 = random.randint(0, len(p4)-1)
 palaEsc4 = p4[x4]
 dicaEsc4 = d4[x4]
@@ -39,7 +14,7 @@ palaEsc7 = p7[x7]
 dicaEsc7 = d7[x7]
 
 p8 = ['Capivara', 'Suricato', '', 'Nintendo', 'Educação']#
-d8 = ['Animal', 'Animal','','Desenvolvedora de Jogos','Estudo']
+d8 = ['Animal', 'Animal','','Desenvolvedora de Jogos','Estudo']#
 x8 = random.randint(0, len(p8)-1)
 palaEsc8 = p8[x8]
 dicaEsc8 = d8[x8]
@@ -50,14 +25,20 @@ x10 = random.randint(0, len(p10)-1)
 palaEsc10 = p10[x10]
 dicaEsc10 = d10[x10]
 
-p11 = ['Playstation', 'Perspectiva', '', 'Compreensão', 'Preconceito']
+p11 = ['Playstation', 'Perspectiva', '', 'Compreensão', 'Preconceito']#
 d11 = ['Desenvolvedora de Jogos','Ponto de Vista','','Entendimento','']#
 x11 = random.randint(0, len(p11)-1)
-palaEsc11 = d11[x11]
+palaEsc11 = p11[x11]
 dicaEsc11 = d11[x11]
 
+forca4 = []
+forca7 = []
+forca8 = []
+forca10 = []
+forca11 = []
+
 while True:
-    d = int(input('''
+    d = input('''
  ----------------------------------------------
 |            Painel de Informações:            |
 |                                              |
@@ -74,9 +55,9 @@ while True:
 |                                              |          
 |                                              |
  ----------------------------------------------
-'''))
+''')
     os.system('cls')
-    if (d == 1):#dificuldade
+    if (d == '1'):            #dificuldade
         dif = int(input('''
  ----------------------------------------------
 |        Escolha a dificuldade do jogo:        |
@@ -96,6 +77,79 @@ while True:
  ----------------------------------------------
 
 '''))
+        
+
+
+        
+        if(dif == 1):
+            dif = 1
+            
+        elif(dif == 2):
+            dif = 2
+            
+        elif(dif == 3):
+            dif = 2
+            dicaEsc4 = '▓▓▓▓▓▓▓'
+            dicaEsc7 = '▓▓▓▓▓▓▓'
+            dicaEsc8 = '▓▓▓▓▓▓▓'
+            dicaEsc10 = '▓▓▓▓▓▓▓'
+            dicaEsc11 = '▓▓▓▓▓▓▓'
+
+        
+        arte = [
+    '''
+    ┌───┐    
+    │
+    │
+    │
+    ┴
+    ''',
+    '''
+    ┌───┐    
+    │   O
+    │
+    │
+    ┴
+    ''',
+    '''
+    ┌───┐    
+    │   O
+    │   |
+    │
+    ┴
+    ''',
+    '''
+    ┌───┐    
+    │   O
+    │  /|
+    │
+    ┴
+    ''',
+    '''
+    ┌───┐    
+    │   O
+    │  /|\\
+    │
+    ┴
+    ''',
+    '''
+    ┌───┐    
+    │   O
+    │  /|\\
+    │  /
+    ┴
+    ''',
+    '''
+    ┌───┐    
+    │   O
+    │  /|\\
+    │  / \\
+    ┴
+    ''',
+    ]
+        erros = ''
+        vida = 0
+
         os.system('cls')     #palavras
         b = int(input('''
  ----------------------------------------------
@@ -116,31 +170,91 @@ while True:
  ----------------------------------------------
 '''))
         os.system('cls')
-        if(dif == 1 or dif == 2):
-            vida = 5
-        elif(dif == 3):
-            vida = 3
-            dica = '▓▓▓▓▓▓▓'
-        else:
-            input('Reinicie o jogo!')
-            break
-forca = []
+    #gerando texto da forca
+        if(b == 1):
+            for i in palaEsc4:
+                if(i == '-'):
+                    forca4.append('- ')
+                elif(i == ' '):
+                    forca4.append(' ')
+                else:
+                    forca4.append('_ ')
 
+        elif(b == 2):
+            for i in palaEsc7:
+                if(i == '-'):
+                    forca7.append('- ')
+                elif(i == ' '):
+                    forca7.append(' ')
+                else:
+                    forca7.append('_ ')
 
+        elif(b == 3):
+            for i in palaEsc8:
+                if(i == '-'):
+                    forca8.append('- ')
+                elif(i == ' '):
+                    forca8.append(' ')
+                else:
+                    forca8.append('_ ')
 
+        elif(b == 4):
+            for i in palaEsc10:
+                if(i == '-'):
+                    forca10.append('- ')
+                elif(i == ' '):
+                    forca10.append(' ')
+                else:
+                    forca10.append('_ ')
 
+        elif(b == 5):
+            for i in palaEsc11:
+                if(i == '-'):
+                    forca11.append('- ')
+                elif(i == ' '):
+                    forca11.append(' ')
+                else:
+                    forca11.append('_ ')
+        while True:
+            os.system('cls')
+            texto = ''
 
+            #montando texto da forca
+            if(b == 1):
+                for i in forca4:
+                    texto += i
+            elif(b == 2):
+                for i in forca7:
+                    texto += i
+            elif(b == 3):
+                for i in forca8:
+                    texto += i
+            elif(b == 4):
+                for i in forca10:
+                    texto += i
+            elif(b == 5):
+                for i in forca11:
+                    texto += i
+            #verificando vitoria
+            if(b == 1):
+                if(palaEsc4 == texto):
+                    os.system('cls')
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dica}
+    Erros: {erros}
 
+            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+            elif(b == 2):
+                if(palaEsc7):
 
+        
+        
+            
 
-
-
-
-
-
-
-    elif(d == 2):
-        print('''
+    elif(d == '2'):
+        input('''
  ----------------------------------------------
 |                 Sobre o jogo:                |
 |                                              |
@@ -150,7 +264,7 @@ forca = []
 |     o número de letras e o tema ligado       |
 |                 à palavra.                   |
 |     A cada letra errada, é desenhado uma     |
-|         parte do corpo do enforcado.         |
+|         parte do corpo de um boneco.         |
 |                                              |
 |                                              |
 |                  BOA SORTE!                  |
@@ -158,21 +272,14 @@ forca = []
 |                                              |
  ----------------------------------------------
  ''')
-        input()
         os.system('cls')
-    elif(d == 3):
+    elif(d == '3'):
+        input("     Aperte ENTER para sair do programa!\n\n")
         break
-        input("Aperte ENTER para sair do programa!")
-
-
-
-
-            #else:
-               # print("Essa opção não existe ou ainda não foi incrementada!")
-               # input()
-               # os.system('cls')
-
-
+    else:
+        print('     Essa opção ainda não foi adicionada!')
+        input('     Aperte ENTER para fechar o programa!\n')
+        break
 
 
 
