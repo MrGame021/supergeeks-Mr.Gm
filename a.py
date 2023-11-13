@@ -242,17 +242,52 @@ while True:
                     input(f'''
     {arte[vida]}
     Palavra: {texto}
-    Dica: {dica}
+    Dica: {dicaEsc4}
     Erros: {erros}
 
             PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
             elif(b == 2):
-                if(palaEsc7):
+                if(palaEsc7 == texto):
+                    os.system('cls')
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc7}
+    Erros: {erros}
 
-        
-        
-            
+            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+            elif(b == 3):
+                if(palaEsc8 == texto):
+                    os.system('cls')
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc8}
+    Erros: {erros}
 
+            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+            elif(b == 4):
+                if(palaEsc10 == texto):
+                    os.system('cls')
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc710}
+    Erros: {erros}
+
+            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+            elif(b == 5):
+                if(palaEsc11 == texto):
+                    os.system('cls')
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc11}
+    Erros: {erros}
+
+            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+            else:
+                print('    Essa opção ainda não existe!')
     elif(d == '2'):
         input('''
  ----------------------------------------------
