@@ -13,8 +13,8 @@ x7 = random.randint(0, len(p7)-1)
 palaEsc7 = p7[x7]
 dicaEsc7 = d7[x7]
 
-p8 = ['Capivara', 'Suricato', '', 'Nintendo', 'Educação']#
-d8 = ['Animal', 'Animal','','Desenvolvedora de Jogos','Estudo']#
+p8 = ['Capivara', 'Suricato', 'Nintendo', 'Educação']
+d8 = ['Animal', 'Animal','Desenvolvedora de Jogos','Estudo']
 x8 = random.randint(0, len(p8)-1)
 palaEsc8 = p8[x8]
 dicaEsc8 = d8[x8]
@@ -25,8 +25,8 @@ x10 = random.randint(0, len(p10)-1)
 palaEsc10 = p10[x10]
 dicaEsc10 = d10[x10]
 
-p11 = ['Playstation', 'Perspectiva', '', 'Compreensão', 'Preconceito']#
-d11 = ['Desenvolvedora de Jogos','Ponto de Vista','','Entendimento','']#
+p11 = ['Playstation', 'Perspectiva', 'Compreensão']
+d11 = ['Desenvolvedora de Jogos','Ponto de Vista', 'Entendimento',]
 x11 = random.randint(0, len(p11)-1)
 palaEsc11 = p11[x11]
 dicaEsc11 = d11[x11]
@@ -58,7 +58,7 @@ while True:
 ''')
     os.system('cls')
     if (d == '1'):            #dificuldade
-        dif = int(input('''
+        di = int(input('''
  ----------------------------------------------
 |        Escolha a dificuldade do jogo:        |
 |                                              |
@@ -81,13 +81,13 @@ while True:
 
 
         
-        if(dif == 1):
+        if(di == 1):
             dif = 1
             
-        elif(dif == 2):
+        elif(di == 2):
             dif = 2
             
-        elif(dif == 3):
+        elif(di == 3):
             dif = 2
             dicaEsc4 = '▓▓▓▓▓▓▓'
             dicaEsc7 = '▓▓▓▓▓▓▓'
@@ -245,9 +245,11 @@ while True:
     Dica: {dicaEsc4}
     Erros: {erros}
 
-            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n            Aperte ENTER para voltar ao painel principal!''')
+                    os.system('cls')
+                    break
                 else:
-                    input(f'''
+                    letra = input(f'''
     {arte[vida]}
     Palavra: {texto}
     Dica: {dicaEsc4}
@@ -263,12 +265,14 @@ while True:
     Dica: {dicaEsc7}
     Erros: {erros}
 
-            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n            Aperte ENTER para voltar ao painel principal!''')
+                    os.system('cls')
+                    break
                 else:
-                    input(f'''
+                    letra = input(f'''
     {arte[vida]}
     Palavra: {texto}
-    Dica: {dicaEsc4}
+    Dica: {dicaEsc7}
     Erros: {erros}
 
     Escolha uma letra: ''')
@@ -282,12 +286,14 @@ while True:
     Dica: {dicaEsc8}
     Erros: {erros}
 
-            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n           Aperte ENTER para voltar ao painel principal!''')
+                    os.system('cls')
+                    break
                 else:
-                    input(f'''
+                    letra = input(f'''
     {arte[vida]}
     Palavra: {texto}
-    Dica: {dicaEsc4}
+    Dica: {dicaEsc8}
     Erros: {erros}
 
     Escolha uma letra: ''')
@@ -296,15 +302,17 @@ while True:
                     input(f'''
     {arte[vida]}
     Palavra: {texto}
-    Dica: {dicaEsc710}
+    Dica: {dicaEsc10}
     Erros: {erros}
 
-            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n            Aperte ENTER para voltar ao painel principal!''')
+                    os.system('cls')
+                    break
                 else:
-                    input(f'''
+                    letra = input(f'''
     {arte[vida]}
     Palavra: {texto}
-    Dica: {dicaEsc4}
+    Dica: {dicaEsc10}
     Erros: {erros}
 
     Escolha uma letra: ''')
@@ -316,17 +324,124 @@ while True:
     Dica: {dicaEsc11}
     Erros: {erros}
 
-            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+            PARABÉNS, VOCÊ ACERTOU A PALAVRA\n            Aperte ENTER para voltar ao painel principal!''')
+                    os.system('cls')
+                    break
                 else:
+                    letra = input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc11}
+    Erros: {erros}
+
+    Escolha uma letra: ''')
+            else:
+                print('    Essa opção ainda não existe!')
+
+            acerto = False
+            if(b == 1):
+                for i in range(len(palaEsc4)):
+                    if(letra.lower() == palaEsc4[i].lower()):
+                        acerto = True
+                        forca4[i] = palaEsc4[i]
+                if(acerto == False):
+                    vida += dif
+                    erros += letra.upper()
+            elif(b == 2):
+                for i in range(len(palaEsc7)):
+                    if(letra.lower() == palaEsc7[i].lower()):
+                        acerto = True
+                        forca7[i] = palaEsc7[i]
+                if(acerto == False):
+                    vida += dif
+                    erros += letra.upper()
+            elif(b == 3):
+                for i in range(len(palaEsc8)):
+                    if(letra.lower() == palaEsc8[i].lower()):
+                        acerto = True
+                        forca8[i] = palaEsc8[i]
+                if(acerto == False):
+                    vida += dif
+                    erros += letra.upper()
+            elif(b == 4):
+                for i in range(len(palaEsc10)):
+                    if(letra.lower() == palaEsc10[i].lower()):
+                        acerto = True
+                        forca10[i] = palaEsc10[i]
+                if(acerto == False):
+                    vida += dif
+                    erros += letra.upper()
+            elif(b == 5):
+                for i in range(len(palaEsc11)):
+                    if(letra.lower() == palaEsc11[i].lower()):
+                        acerto = True
+                        forca11[i] = palaEsc11[i]
+                if(acerto == False):
+                    vida += dif
+                    erros += letra.upper()
+
+            if(b == 1):
+                if(vida >= 6):
+                    os.system('cls')
                     input(f'''
     {arte[vida]}
     Palavra: {texto}
     Dica: {dicaEsc4}
     Erros: {erros}
 
-    Escolha uma letra: ''')
-            else:
-                print('    Essa opção ainda não existe!')
+            Você perdeu. Mais sorte da próxima vez!\n\n            Aperte ENTER para voltar ao painel principal!''')
+                    os.system('cls')
+                    break
+                
+            elif(b == 2):
+                if(vida >= 6):
+                    os.system('cls')
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc7}
+    Erros: {erros}
+
+            Você perdeu. Mais sorte da próxima vez!\n\n            Aperte ENTER para voltar ao painel principal!''')
+                    os.system('cls')
+                    break
+            elif(b == 3):
+                if(vida >= 6):
+                    os.system('cls')
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc8}
+    Erros: {erros}
+
+            Você perdeu. Mais sorte da próxima vez!\n\n            Aperte ENTER para voltar ao painel principal!''')
+                    os.system('cls')
+                    break
+            elif(b == 4):
+                if(vida >= 6):
+                    os.system('cls')
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc10}
+    Erros: {erros}
+
+            Você perdeu. Mais sorte da próxima vez!\n\n            Aperte ENTER para voltar ao painel principal!''')
+                    os.system('cls')
+                    break
+            elif(b == 5):
+                if(vida >= 6):
+                    os.system('cls')
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc11}
+    Erros: {erros}
+
+            Você perdeu. Mais sorte da próxima vez!\n\n            Aperte ENTER para voltar ao painel principal!''')
+                    os.system('cls')
+                    break
+            
     elif(d == '2'):
         input('''
  ----------------------------------------------
@@ -354,6 +469,3 @@ while True:
         print('     Essa opção ainda não foi adicionada!')
         input('     Aperte ENTER para fechar o programa!\n')
         break
-
-
-
