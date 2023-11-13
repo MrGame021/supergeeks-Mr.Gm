@@ -238,7 +238,7 @@ while True:
             #verificando vitoria
             if(b == 1):
                 if(palaEsc4 == texto):
-                    os.system('cls')
+                    
                     input(f'''
     {arte[vida]}
     Palavra: {texto}
@@ -246,9 +246,17 @@ while True:
     Erros: {erros}
 
             PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+                else:
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc4}
+    Erros: {erros}
+
+    Escolha uma letra: ''')
             elif(b == 2):
                 if(palaEsc7 == texto):
-                    os.system('cls')
+                    
                     input(f'''
     {arte[vida]}
     Palavra: {texto}
@@ -256,6 +264,15 @@ while True:
     Erros: {erros}
 
             PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+                else:
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc4}
+    Erros: {erros}
+
+    Escolha uma letra: ''')
+                    
             elif(b == 3):
                 if(palaEsc8 == texto):
                     os.system('cls')
@@ -266,9 +283,16 @@ while True:
     Erros: {erros}
 
             PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+                else:
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc4}
+    Erros: {erros}
+
+    Escolha uma letra: ''')
             elif(b == 4):
                 if(palaEsc10 == texto):
-                    os.system('cls')
                     input(f'''
     {arte[vida]}
     Palavra: {texto}
@@ -276,9 +300,16 @@ while True:
     Erros: {erros}
 
             PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+                else:
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc4}
+    Erros: {erros}
+
+    Escolha uma letra: ''')
             elif(b == 5):
                 if(palaEsc11 == texto):
-                    os.system('cls')
                     input(f'''
     {arte[vida]}
     Palavra: {texto}
@@ -286,6 +317,14 @@ while True:
     Erros: {erros}
 
             PARABÉNS, VOCÊ ACERTOU A PALAVRA\n\n            Aperte ENTER para voltar ao painel principal!''')
+                else:
+                    input(f'''
+    {arte[vida]}
+    Palavra: {texto}
+    Dica: {dicaEsc4}
+    Erros: {erros}
+
+    Escolha uma letra: ''')
             else:
                 print('    Essa opção ainda não existe!')
     elif(d == '2'):
